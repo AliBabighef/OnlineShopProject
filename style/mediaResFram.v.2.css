@@ -1,0 +1,399 @@
+.navBarContainnerRes {
+    display: none;
+}
+
+.navBarFram .headerRes {
+    display: flex;
+    padding: 10px 0;
+    position: relative;
+}
+
+.navBarFram .headerRes::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #DDD;
+}
+
+.navBarFram .sectionPage h3 {
+    margin: 0;
+    color: #FFF;
+    text-transform: capitalize;
+    margin-left: 5px;
+    width: calc(100% - 35px);
+}
+
+.navBarFram .sectionPage .logOutPage {
+    color: #FFF;
+    display: block;
+    width: 30px;
+    position: relative;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+
+.navBarFram .sectionPage .logOutPage svg {
+    width: 100%;
+}
+
+.navBarFram .profile {
+    display: flex;
+    padding: 10px 0;
+    position: relative;
+}
+
+.navBarFram .profile::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #DDD;
+}
+
+.navBarFram .profile .userIconRes {
+    background: #DDD;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    color: #FFF;
+    position: relative;
+}
+
+
+.navBarFram .profile .userIconRes span:nth-child(2) {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+}
+
+.navBarFram .profile .userIconRes span:last-of-type {
+    position: absolute;
+    background: #8bc34a;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 28px;
+    right: 0;
+}
+
+.navBarFram .profile .userIconRes span svg {
+    height: 38px;
+    font-size: 25px;
+}
+
+.navBarFram .profile h3 {
+    width: calc(100% - 155px);
+    line-height: 38px;
+    margin-left: 10px;
+}
+
+.navBarFram .profile a {
+    width: 100px;
+    line-height: 35px;
+    color: #FFF;
+    text-transform: capitalize;
+    text-decoration: none;
+    opacity: .5;
+}
+
+.navBarFram .profile a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.navBarFram .categories,
+.navBarFram .cities {
+    display: flex;
+    color: #FFF;
+    /* background: #DDD; */
+    position: relative;
+    padding: 10px 0;
+    cursor: pointer;
+    color: #DDD;
+    opacity: .5;
+}
+
+.navBarFram .categories h3,
+.navBarFram .cities h3 {
+    font-weight: normal;
+}
+
+.navBarFram .categories:hover,
+.navBarFram .cities:hover {
+    opacity: 1;
+    background: #ff9800;
+}
+
+.navBarFram hr {
+    margin: 0;
+}
+
+.navBarFram .parentCate ul,
+.navBarFram .parentCities ul {
+    background: #FFF;
+    margin: 0;
+    display: none;
+    background: #000;
+    max-height: 135px;
+    overflow: scroll;
+}
+
+.navBarFram .parentCate ul li,
+.navBarFram .parentCities ul li {
+    list-style: none;
+    cursor: pointer;
+    position: relative;
+    left: -22px;
+    display: flex;
+    color: gray;
+
+}
+
+.navBarFram .parentCate ul li:first-of-type svg {
+    display: block;
+    width: 25px;
+    height: 35px;
+    margin-right: 10px
+}
+
+.navBarFram .parentCate ul li:hover,
+.navBarFram .parentCities ul li:hover {
+    color: #FFF;
+    opacity: 1;
+}
+
+.navBarFram .parentCate ul.active li a,
+.navBarFram .parentCities ul.active li a {
+    width: 100%;
+    text-decoration: none;
+    color: #FFF;
+    opacity: .5;
+    display: block;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.navBarFram .parentCate ul.active li a:hover,
+.navBarFram .parentCities ul.active li a:hover {
+    opacity: 1;
+}
+
+.navBarFram .parentCate ul.active li::after,
+.navBarFram .parentCities ul.active li::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #DDD;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.navBarFram .parentCate ul.active li:last-of-type::after,
+.navBarFram .parentCities ul.active li:last-of-type::after {
+    display: none;
+}
+
+.navBarFram .parentCate ul li:hover,
+.navBarFram .parentCities ul li:hover {
+    background-color: #ff9800;
+}
+
+.navBarFram .parentCate .categories .fa-greater-than.active,
+.navBarFram .parentCities .cities .fa-greater-than.active {
+    transition: all .3s ease-in-out;
+    transform: rotateZ(90deg);
+}
+
+.navBarFram .parentCate ul.active,
+.navBarFram .parentCities ul.active {
+    display: block;
+}
+
+@media(max-width: 400px),
+(min-width: 400px) and (max-width: 1000px) {
+    .navBarFram {
+        background: #03a9f4;
+    }
+
+    .containner {
+        width: calc(100% - 30px) !important;
+        padding: 0 15px !important;
+    }
+
+    .navBarContainner {
+        display: none;
+    }
+
+    .navBarContainnerRes {
+        display: block;
+        padding: 8px 0;
+        display: block;
+    }
+
+    .navBarContainnerRes .iconMenu {
+        width: 25px;
+        height: 25px;
+        color: #FFF;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .navBarContainnerRes .iconMenu svg {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .navBarContainnerRes .sectionPage.open {
+        transition: all 45ms ease-in-out;
+        transform: translateX(0);
+    }
+
+
+    .navBarContainnerRes .sectionPage {
+        transition: all 7ms ease-in-out;
+        width: 60%;
+        background: #000;
+        position: fixed;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 6;
+        transform: translateX(-300px);
+    }
+
+    .navBarContainnerRes .sectionPage.close {
+        transition: all 7ms ease-in-out;
+        transform: translateX(-650px);
+    }
+
+    .subNavBar .search input {
+        width: auto !important;
+        font-size: .8em;
+    }
+
+    .subNavBar .search button.iconSearch {
+        width: 35px !important;
+        height: 35px !important;
+    }
+
+    .home_page .containnerProduct {
+        display: block !important;
+    }
+
+    .home_page .containnerProduct .product {
+        width: auto !important;
+        margin-right: 0 !important;
+    }
+
+    .showItem .itemCon {
+        display: block !important;
+    }
+
+    .showItem .itemCon .leftContainner,
+    .showItem .itemCon .rightContainner {
+        width: auto !important;
+    }
+
+    .commentsSystemContPartOne .nameProCon {
+        border: none !important;
+    }
+
+    .commentsSystemContPartOne .nameProCon input,
+    .commentsSystemCont .nameProCon input {
+        height: 60px;
+        border-radius: 45px;
+        border: 1px solid #DDD;
+    }
+
+    .commentsSystemContPartOne .nameProCon button,
+    .commentsSystemCont .nameProCon button {
+        border-radius: 15px;
+    }
+
+    .commentsSystemCont .nameProCon button {
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    .commentsSystemCont .nameProCon button::before {
+        display: none;
+    }
+
+    .commentsSystemContPartOne .nameProCon input,
+    .commentsSystemContPartOne .nameProCon button,
+    .commentsSystemCont .nameProCon button {
+        border: 1px solid #DDD !important;
+        width: 100% !important;
+    }
+
+    .commentsSystemCont .nameProCon {
+        border: none;
+    }
+
+    .commentsSystemCont .nameProCon:hover {
+        border: none;
+    }
+
+    .commentsSystemContPartOne .nameProCon input:hover,
+    .commentsSystemContPartOne .nameProCon button:hover,
+    .commentsSystemContPartOne .nameProCon input:focus {
+        border: 1px solid #ff9800 !important;
+    }
+
+    .commentsSystemContPartOne .nameProCon button {
+        margin: 10px 0 0 0 !important;
+    }
+
+    .commentsSystemCont .nameProCon {
+        display: block !important;
+    }
+
+    .showItem .leftContainner .nameProCon {
+        display: block !important;
+    }
+
+    .showItem .leftContainner .nameProCon input {
+        width: 98%;
+        margin: 0 1%
+    }
+
+    .showItem .leftContainner .nameProCon span::after {
+        display: none !important;
+    }
+
+    .showItem .leftContainner .nameProCon span {
+        width: 100% !important;
+    }
+
+    .leftContainner .nameProCon div {
+        width: 94% !important;
+        margin: 0 1%;
+    }
+
+    .showItem .leftContainner .nameProCon a {
+        color: gray;
+        font-weight: normal;
+    }
+
+    .logInPage form {
+        width: 94%;
+    }
+
+    form.formSignUp input:last-of-type {
+        margin: 15px 0;
+    }
+}
+
+/* @media(min-width: 400px) and (max-width: 600px) {
+    .navBarContainnerRes .sectionPage {
+        transform: translateX(-300px) !important;
+    }
+} */

@@ -1,0 +1,1123 @@
+/* start fram work  */
+.containner {
+    width: 1000px;
+    margin: auto;
+}
+
+.fram_color_orange {
+    color: #ff9800 !important;
+}
+
+.fram-hide {
+    position: absolute;
+    transition: all 6ms ease-in-out;
+    transform: translateX(-2000px);
+}
+
+.fram-clearBoth {
+    clear: both;
+}
+
+.fram-problem {
+    background: #f4433647;
+    padding: 15px 10px;
+    color: #f44336;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.fram-No-problem {
+    background: #8bc34a75;
+    padding: 15px 10px;
+    color: #4caf50;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.fram-No-comment {
+    text-transform: capitalize;
+    font-size: 1.3em;
+    text-align: center;
+    margin: 0;
+}
+
+.fram-No-content {
+
+    text-align: center;
+    font-size: 1.2em;
+    color: gray;
+
+}
+
+/* end fram work  */
+/* start styling admin page   */
+.navBar {
+    display: flex;
+}
+
+.navBarContainner {
+    background-color: #000;
+}
+
+.navBar .logo {
+    display: flex;
+    /* padding: 10px 0 10px 15px; */
+    width: 30%;
+    padding: 10px 15px;
+}
+
+.navBar .logo svg {
+    color: #FFF;
+}
+
+.navBar .logo h3 {
+    color: #FFF;
+    text-transform: capitalize;
+    margin: 0 0 0 10px;
+}
+
+.navBar .setting {
+    display: flex;
+    /* padding: 10px 15px 10px 0; */
+    width: 70%;
+    flex-wrap: wrap;
+}
+
+
+.navBar .setting .nav {
+    display: flex;
+    width: calc(97% / 3);
+    color: #FFF;
+    position: relative;
+    margin-left: 10px;
+}
+
+.navBar .setting .nav:hover {
+    background-color: #ff9800;
+}
+
+.navBar .setting .nav.active {
+    background-color: #ff9800;
+}
+
+
+.navBar .setting .nav:first-of-type {
+    margin: 0 !important;
+}
+
+.navBar .setting .nav h3 {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 42px;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.navBar .setting ul.subList {
+    display: block;
+    position: absolute;
+    top: 42px;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: #03a9f4;
+    transition: all 2s ease-in-out;
+    list-style: none;
+    margin: 0;
+    width: calc(100% - 3px);
+}
+
+/* .navBar .setting ul.subList.visible {
+    display: block;
+    position: absolute;
+    top: 42px;
+    bottom: 0;
+    width: 180px;
+    height: 100%;
+    margin: 0;
+    background: #03a9f4;
+    transition: all 2s ease-in-out;
+    list-style: none;
+    padding: 0;
+} */
+
+/* .navBar .setting ul.subList li {
+    position: relative;
+    left: -40px;
+    width: 191px;
+    cursor: pointer;
+    padding: 10px;
+} */
+
+.navBar .setting ul.subList a {
+    color: #FFF;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+}
+
+.navBar .setting ul.subList li:hover {
+    text-decoration: underline;
+    background-color: #FFF;
+    color: #ff9800;
+    border: 1px solid #EFEFEF;
+}
+
+/* end styling admin page   */
+/* start sow product  */
+.home_page .containnerProduct {
+    display: flex;
+    flex-wrap: wrap;
+    /* margin: 0 15px; */
+}
+
+.home_page .containnerProduct .product {
+    /* background: #DDD; */
+    border: 1px solid #ffc107;
+    width: calc((94% - 8px) /4);
+    margin-right: 2%;
+    margin-bottom: 15px;
+}
+
+.home_page .containnerProduct .product.custumMargin {
+    margin-right: 0;
+}
+
+.home_page .containnerProduct .headerProduct {
+    position: relative;
+    width: 100%;
+    /* background: red; */
+    height: 250px;
+}
+
+.home_page .containnerProduct .headerProduct span.iconImg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #EFEFEF;
+    display: block;
+}
+
+.home_page .containnerProduct .headerProduct span.iconImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.home_page .containnerProduct .headerProduct span.iconImg svg {
+    width: 100%;
+    height: 100%;
+}
+
+.home_page .containnerProduct .headerProduct span.price {
+    background: #ff9800;
+    padding: 3px;
+    width: 60px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 16px
+}
+
+.home_page .product {
+    position: relative;
+}
+
+.home_page .containnerProduct .infoProduct {
+    margin: 20px 0 20px 10px;
+    text-transform: capitalize;
+}
+
+.home_page .containnerProduct .infoProduct .nameProduct {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.home_page .containnerProduct .infoProduct .nameProduct:hover {
+    text-decoration: underline;
+}
+
+.home_page .containnerProduct .infoProduct .nameProduct a {
+    color: #000;
+    text-decoration: none;
+}
+
+.home_page .containnerProduct .infoProduct .dateProduct {
+    color: gray;
+    font-size: .9em;
+    /* font-weight: bold; */
+}
+
+.home_page .containnerProduct .infoProduct .decriptionOfProduct {
+    color: gray;
+    font-size: .9em;
+    margin: 5px 0 0 0;
+}
+
+.home_page .product .overLow {
+    width: 100%;
+    background-color: #0006;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: radial-gradient(black, transparent);
+    display: none;
+}
+
+.home_page .product:hover .overLow {
+    display: block;
+}
+
+.home_page .product .overLow a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+
+.home_page .product .overLow a {
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* end sow product  */
+/* start subNaveBar */
+.subNavBar .search {
+    margin: 15px 0;
+    border: 1px solid #ff9800;
+}
+
+.subNavBar .search form {
+    margin: 0;
+}
+
+.subNavBar .search input {
+    /* padding: 10px; */
+    border: none;
+    cursor: pointer;
+    width: 95%;
+
+}
+
+.subNavBar .search input::placeholder {
+    text-transform: capitalize;
+}
+
+.subNavBar .search input:focus {
+    outline: #ff9800;
+}
+
+.subNavBar .search button.iconSearch {
+    color: #ff9800;
+    width: 43px;
+    height: 46px;
+    background: none;
+    border: none;
+    border-right: 1px solid #ff9800;
+}
+
+.subNavBar .search button.iconSearch:hover {
+    background: #ffc107;
+}
+
+.subNavBar .search button.iconSearch:focus {
+    outline: none;
+}
+
+/* end subNaveBar */
+/* start logIn page  */
+.logInPage {
+    position: relative;
+    transition: all 6ms ease-in-out;
+}
+
+.logInPage h1.title {
+    text-align: center;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: gray;
+    font-weight: normal;
+}
+
+.logInPage h1.title span.active {
+    color: #ff9800;
+}
+
+.logInPage form {
+    transition: all 1s ease-in-out;
+    width: 40%;
+    margin: auto;
+    position: absolute;
+}
+
+.logInPage form input {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #DDD;
+}
+
+.logInPage form input::placeholder {
+    text-transform: capitalize;
+}
+
+.logInPage form input:focus {
+    outline: none;
+    border: 1px solid #ff9800;
+}
+
+.logInPage form input:nth-of-type(2) {
+    margin: 15px 0;
+}
+
+.logInPage form .iconSearch {
+    padding: 5px 0;
+    background: none;
+    border: 1px solid #DDD;
+    background: #ff9800;
+    color: #03a9f4;
+    font-size: 1.5em;
+    width: 100%;
+}
+
+/* logIn page  */
+/* end create a new produt  */
+.newProduct h3,
+.showItem h3 {
+    text-align: center;
+    text-transform: capitalize;
+    color: #ff9800;
+    font-size: 1.5em;
+}
+
+.newProduct .newProductCont,
+.showItem .item {
+    border: 1px solid #03a9f4;
+    /* width: 80%; */
+    margin: auto;
+}
+
+.newProduct .newProductCont h4,
+.showItem .item h4 {
+    color: #FFF;
+    background: #03a9f4;
+    padding: 10px;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.newProduct .newProductCont .parentElements,
+.showItem .itemCon {
+    display: flex;
+}
+
+.newProduct .newProductCont .leftElements,
+.showItem .itemCon .leftContainner {
+    width: 80%;
+}
+
+.newProduct .newProductCont .leftElements .nameProCon,
+.showItem .leftContainner .nameProCon,
+.commentsSystemCont .nameProCon {
+    display: flex;
+    /* flex-direction: row-reverse; */
+}
+
+.showItem .leftContainner .nameProCon span {
+    position: relative;
+}
+
+.showItem .leftContainner .nameProCon span::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-color: transparent #DDD transparent transparent;
+    border-style: solid;
+    top: 11px;
+    right: 0;
+}
+
+.newProduct .newProductCont .leftElements .nameProCon:first-of-type,
+.showItem .leftContainner .nameProCon:first-of-type {
+    margin-top: 10px;
+}
+
+.newProduct .newProductCont .leftElements .nameProCon,
+.showItem .leftContainner .nameProCon {
+    margin-bottom: 10px;
+}
+
+.newProduct .newProductCont .leftElements .nameProCon>input,
+.newProduct .newProductCont .leftElements .nameProCon select,
+.showItem .leftContainner .nameProCon div,
+.showItem .leftContainner .nameProCon input,
+.commentsSystemCont .nameProCon input {
+    width: calc(80% - 10px);
+    padding: 10Px;
+    border: 1px solid #DDD;
+    color: gray;
+    text-transform: capitalize;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.commentsSystemCont .nameProCon input {
+    margin: 0;
+}
+
+.commentsSystemCont .nameProCon {
+    border: 1px solid #DDD;
+    margin: 0 15px;
+}
+
+.commentsSystemContPartOne .nameProCon input {
+    width: 80%;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.commentsSystemContPartOne .nameProCon:hover {
+    border: 1px solid #ff9800;
+}
+
+.commentsSystemContPartOne .nameProCon:hover button {
+    border-left: 1px solid #ff9800;
+}
+
+
+.commentsSystemContPartOne .nameProCon {
+    border: 1px solid #DDD;
+}
+
+.commentsSystemContPartOne .nameProCon input:focus {
+    outline: none;
+}
+
+.commentsSystemContPartOne .nameProCon button {
+    width: 19%;
+    border: none;
+    height: 30px;
+    background: none;
+    border-left: 1px solid #DDD;
+}
+
+.commentsSystemContPartOne .nameProCon button svg {
+    color: #03a9f4;
+}
+
+.commentsSystemContPartOne .nameProCon button:focus {
+    outline: none;
+}
+
+.commentsSystemContPartOne .nameProCon button:hover {
+    background-color: #ff9800;
+}
+
+.commentsSystemCont .nameProCon input,
+.commentsSystemCont .nameProCon button {
+    border: none;
+}
+
+.commentsSystemCont .nameProCon button {
+    background-color: #FFF;
+}
+
+.commentsSystemCont .nameProCon input {
+    width: 100%;
+}
+
+
+.showItem .leftContainner .nameProCon a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none
+}
+
+.showItem .leftContainner .nameProCon a:hover {
+    text-decoration: underline;
+}
+
+.newProduct .newProductCont .leftElements .nameProCon span,
+.showItem .leftContainner .nameProCon span,
+.commentsSystemCont .nameProCon button {
+    width: calc(20% - 10px);
+    text-transform: capitalize;
+    color: #000;
+    font-weight: bold;
+    line-height: 40px;
+    margin-left: 10px;
+}
+
+.newProduct .newProductCont .leftElements .nameProCon>input::placeholder,
+.showItem .leftContainner .nameProCon input,
+.commentsSystemCont .nameProCon input::placeholder {
+    text-transform: capitalize;
+}
+
+.newProduct .newProductCont .leftElements .nameProCon>input:focus,
+.newProduct .newProductCont .leftElements .nameProCon select:focus,
+.showItem .leftContainner .nameProCon input:focus {
+    border: 1px solid #ff9800;
+    outline: none;
+}
+
+.commentsSystemCont .nameProCon button {
+    color: #03a9f4;
+    width: 60px;
+    margin-left: 0;
+    position: relative;
+}
+
+.commentsSystemCont .nameProCon button::before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #DDD;
+}
+
+.commentsSystemCont .nameProCon button:hover {
+    background-color: #ff9800;
+}
+
+.commentsSystemCont form {
+    margin-top: 20px;
+}
+
+.commentsSystemCont .nameProCon:hover {
+    border: 1px solid #ff9800;
+}
+
+.commentsSystemCont .nameProCon input:focus {
+    outline: none;
+}
+
+.newProduct .newProductCont .rightElements,
+.showItem .itemCon .rightContainner {
+    width: 60%;
+}
+
+.newProduct .newProductCont .rightElements .contImg {
+    border: 1px solid #DDD;
+    width: calc(100% - 20px);
+    height: calc(80% - 20px);
+    margin: 10px;
+    position: relative;
+}
+
+.showItem .rightContainner .contImg {
+    border: 1px solid #DDD;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.showItem .rightContainner .contImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.showItem .rightContainner .contImg .overLow {
+    display: none;
+    background: #0000009e;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.showItem .rightContainner .contImg .overLow a {
+    color: #FFF;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 25;
+}
+
+.showItem .rightContainner .contImg:hover .overLow {
+    display: block;
+}
+
+.newProduct .newProductCont .rightElements .contImg svg {
+    position: absolute;
+    color: #DDD;
+    width: 100%;
+    height: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.newProduct .newProductCont .rightElements .contImg span,
+.showItem .rightContainner .contImg span {
+    position: absolute;
+    display: block;
+    background: #ff9800;
+    font-weight: bold;
+    width: 50px;
+    text-align: center;
+    top: 14px;
+    padding: 2px 0;
+}
+
+.newProduct .newProductCont .rightElements .contentImg,
+.showItem .rightContainner .contentImg {
+    /* background: red; */
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    height: 67px;
+    max-height: 67px;
+}
+
+.newProduct .newProductCont .rightElements h5,
+.newProduct .newProductCont .rightElements p {
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.newProduct .newProductCont .rightElements h5 {
+    font-size: 1em;
+}
+
+.newProduct .newProductCont .rightElements p {
+    color: gray;
+    font-size: .8em;
+    height: calc(100% - 20px);
+}
+
+/* start create a new produt  */
+/* start veiw image silder  */
+.containnerImgSlider {
+    /* width: 80%; */
+    margin: auto;
+}
+
+.commentsSystemCont {
+    position: absolute;
+    bottom: -65px;
+    left: 0px;
+}
+
+.commentsSystemCont {
+    width: calc(100% - 30px);
+}
+
+.containnerImgSlider .containnerBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containnerImgSlider .containnerBtn .leftBtn,
+.containnerImgSlider .containnerBtn .rightBtn {
+    /* background: green; */
+    color: #000;
+    cursor: pointer;
+    height: 30px;
+    width: 50px;
+    text-align: center;
+    line-height: 30px;
+}
+
+
+.containnerImgSlider .containnerBtn .leftBtn:hover,
+.containnerImgSlider .containnerBtn .rightBtn:hover {
+    background-color: #ff9800;
+}
+
+.containnerImgSlider .containnerBtn .leftBtn svg,
+.containnerImgSlider .containnerBtn .rightBtn svg {
+    width: 100%;
+    height: 80%;
+    margin-top: 5%;
+}
+
+.containnerImgSlider .placeImg {
+    width: 100%;
+    position: relative;
+    height: 500px;
+}
+
+.containnerImgSlider .placeImg img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 6s ease-in-out;
+}
+
+/* end veiw image silder  */
+/* start show comments  */
+.showComments,
+.replyComments {
+    /* width: 60%; */
+    margin: auto;
+}
+
+.replyComments {
+    width: 100%;
+    margin: auto;
+    min-height: 90%;
+    position: relative;
+}
+
+
+.showComments .btnLogOutCommentsSystem,
+.replyComments .btnLogOutreply {
+    display: flex;
+    padding: 10px 0;
+    position: relative;
+}
+
+.showComments .btnLogOutCommentsSystem::before,
+.replyComments .btnLogOutreply::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    display: block;
+    background: #EFEFEF;
+}
+
+.showComments .btnLogOutCommentsSystem span {
+    display: block;
+    width: 40px;
+    text-align: center;
+    padding-top: 3px;
+    cursor: pointer;
+}
+
+.showComments .btnLogOutCommentsSystem h3,
+.replyComments .btnLogOutreply h3 {
+    margin: 0;
+    width: calc(100% - 40px);
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.showComments .comments {
+    margin-bottom: 40px;
+}
+
+.showComments .comments:last-child {
+    margin-bottom: 0;
+}
+
+.showComments .profileCmt {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.showComments .profileCmt span:nth-child(2) {
+    width: calc(100% - 65px);
+    margin-left: 15px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.showComments .profileCmt span:first-child {
+    background: #DDD;
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+}
+
+.showComments .profileCmt p {
+    position: absolute;
+    left: 65px;
+    color: gray;
+    margin: 0;
+    top: 25px;
+}
+
+.showComments .profileCmt span svg {
+    width: 100%;
+    height: 50%;
+    color: #FFF;
+    transform: translateY(10px);
+}
+
+.showComments p.cmt {
+    background: #DDD;
+    width: 150px;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 0 0 0 54px;
+    color: gray;
+}
+
+.showComments .settinfCmt {
+    margin: 0 0 0 54px;
+    width: calc(100% - 54px);
+    display: flex;
+}
+
+.showComments .settinfCmt a {
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.showComments .settinfCmt a:hover {
+    text-decoration: underline;
+}
+
+.showComments .settinfCmt span {
+    background: #EFEFEF;
+    margin: 10px 0 0 0;
+    display: block;
+    min-width: 70px;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 9px;
+}
+
+.showComments .settinfCmt span:last-child {
+    min-width: 140px;
+    margin-left: 10px;
+}
+
+.showComments .itemInfoContainner {
+    /* border: 1px solid #DDD; */
+    /* height: 1300px; */
+    /* background-image: url(../upload/15460436684_516973_img.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .5s ease-in-out;
+    margin-bottom: 20px;
+    height: 900px;
+}
+
+.showComments hr {
+    border: 1px solid #EFEFEF;
+    margin: 25px 0;
+}
+
+.showComments .itemInfoContainner .sliderImgCon {
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.showComments .itemInfoContainner .sliderImgCon span {
+    cursor: pointer;
+    background: #ff9800;
+    display: block;
+    width: 50px;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 10px;
+    transform: translateY(-50%);
+    opacity: .5;
+    transition: all .5s ease-in-out;
+}
+
+.showComments .itemInfoContainner .sliderImgCon span.lft {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+}
+
+.showComments .itemInfoContainner .sliderImgCon span.rgt {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+}
+
+.showComments .itemInfoContainner .sliderImgCon span:hover {
+    opacity: 1;
+}
+
+.parentHeaderItem,
+.replyComments .reply {
+    background: #F1F1F1;
+    padding: 10px;
+    margin: 15px 0 0 0;
+}
+
+.replyComments .subReply {
+    background: #efefef82;
+    border-radius: 20px;
+    margin: 15px 0 0 60px;
+    width: calc(100% - 80px);
+    position: relative;
+    padding: 10px;
+}
+
+.replyComments .subReply:last-of-type {
+    margin-bottom: 60px;
+}
+
+.replyComments .reply {
+    border-radius: 20px;
+}
+
+.showComments .headerItem,
+.replyComments .headerReply {
+    display: flex;
+}
+
+.parentHeaderItem p,
+.replyComments .reply p,
+.replyComments .subReply p {
+    margin: 5 0 0 0;
+    color: gray;
+    text-transform: capitalize;
+}
+
+.showComments .headerItem .infoHeaderItem span,
+.replyComments .infoHeaderItem span {
+    display: block;
+}
+
+.showComments .headerItem .infoHeaderItem span:first-child,
+.replyComments .infoHeaderItem span:first-child {
+    margin-bottom: 5px;
+}
+
+.showComments .infoHeaderItem a,
+.replyComments .infoHeaderItem a {
+    text-transform: capitalize;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.showComments .infoHeaderItem a:hover,
+.replyComments .infoHeaderItem a:hover {
+    text-decoration: underline;
+}
+
+.showComments .infoHeaderItem,
+.replyComments .infoHeaderItem {
+    margin-left: 10px;
+    width: calc(100% - 60px);
+
+}
+
+.showComments .infoHeaderItem span,
+.replyComments .infoHeaderItem span {
+    color: gray;
+}
+
+.showComments .headerItem span.icon,
+.replyComments .headerReply .icon {
+    width: 50px;
+    height: 50px;
+    background: #DDD;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    color: #EFEFEF;
+}
+
+.showComments .headerItem span.icon svg,
+.replyComments .headerReply .icon svg {
+    height: 100%;
+    width: 50%;
+}
+
+/* end show comments  */
+/* start .subNavBar */
+.subNavBar .ul {
+    float: right;
+    width: 68%;
+    display: flex;
+    position: relative;
+    /* margin-bottom: 20px; */
+}
+
+.subNavBar .ul ul {
+    display: none;
+}
+
+.subNavBar .ul ul.show {
+    display: block;
+    list-style: none;
+    margin: 0;
+    width: calc(80% / 3);
+    background: #2196f3;
+    max-height: 110px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+.subNavBar .ul ul.show:first-of-type {
+    position: relative;
+    right: 0;
+}
+
+.subNavBar .ul ul.show:nth-child(2) {
+    position: relative;
+    right: -33%;
+    transform: translateX(5px);
+}
+
+.subNavBar .ul ul.show:last-of-type {
+    position: relative;
+    left: 68%;
+    transform: translateX(-3px);
+}
+
+.subNavBar .ul ul li:first-of-type {
+    margin-top: 10px;
+}
+
+.subNavBar .ul ul li {
+    position: relative;
+    left: -30px;
+    margin-bottom: 10px;
+}
+
+.subNavBar .ul ul li a {
+    color: #FFF;
+    text-transform: capitalize;
+    text-decoration: none;
+    opacity: .8;
+}
+
+.subNavBar .ul ul li a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.home_page h3.CutomHeader {
+    text-align: center;
+    text-transform: capitalize;
+    color: gray;
+}
+
+/* end .subNavBar */
